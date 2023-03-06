@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #131518;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 15px;
+    height: 360px;
+    width: 86%;
+    max-width: 412px;
+    padding: 24px;
+}
+
+.img-wrapper, .numbers div  {
+    width: 40px;
+    height: 40px;
+    background-color: #262E38;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-block: 16px 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #969FAD;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    color: #7C8798;
+    padding-block: 24px;
+    user-select: none;
+}
+
+
+button {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.86667px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    height: 45px;
+    background-color: #FC7614;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.selected {
+    background-color: #7C8798;
+    color: #FFFFFF;
+}
+
+.illustration {
+    margin: 34px auto 24px;
+    display: block;
+}
+
+p.end-txt {
+    width: 168px;
+    height: 32px;
+    background-color: #262E38;
+    color: #FC7614;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 22.5px;
+    text-align: center;
+    padding: 5px 12px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.end-p {
+    text-align: center;
+    width: 279px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        height: 416px;
+        padding: 32px;
+    }
+    .img-wrapper, .numbers div  {
+        height: 48px;
+        width: 48px;
+    }
+    h1,
+    h2 {
+        font-size: 28px;
+        margin-block: 30px 7px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .numbers div:hover {
+        cursor: pointer;
+        background-color: #FC7614;
+        color: #FFFFFF;
+        transition: 0.3s;
+    }
+    button {
+        font-size: 16px;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: #FFFFFF;
+        color: #FC7614;
+        transition: 0.3s;
+    }    
+}
